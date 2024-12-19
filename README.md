@@ -1,4 +1,4 @@
-# PHP, Docker, Nginx, MYSql, phpMyAdmin
+# PHP, Nginx, MYSql & phpMyAdmin in Docker
 
 A simple Docker-based development environment featuring PHP, MySQL, phpMyAdmin, and Nginx. This setup enables you to easily run a PHP web application with a MySQL database and manage the database using phpMyAdmin.
 
