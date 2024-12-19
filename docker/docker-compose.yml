@@ -1,14 +1,14 @@
 version: '3.9'
 
 services:
-  php:
+  php-app:
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
       - ../:/var/www/html
     networks:
-      - app-network
+      - php-app-network
 
   nginx:
     image: nginx:alpine
@@ -18,7 +18,7 @@ services:
     ports:
       - "8080:80"
     networks:
-      - app-network
+      - php-app-network
 
   mysql:
     image: mysql:5.7
@@ -31,7 +31,7 @@ services:
     ports:
       - "3307:3306"
     networks:
-      - app-network
+      - php-app-network
   
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -44,10 +44,10 @@ services:
     depends_on:
       - mysql
     networks:
-      - app-network
+      - php-app-network
 
 networks:
-  app-network:
+  php-app-network:
 
 volumes:
   mysql_data:

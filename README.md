@@ -52,7 +52,7 @@ Ensure Docker and Docker Compose are installed on your system. You can follow th
 3. Build and start the services using Docker Compose:
 
     ```bash
-    docker-compose up --build -d
+    docker-compose -f docker/docker-compose.yml up --build
     ```
 
     This will build the PHP image, pull the necessary images for MySQL, Nginx, and phpMyAdmin, and start the containers in detached mode.
