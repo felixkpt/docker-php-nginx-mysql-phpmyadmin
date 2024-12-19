@@ -1,7 +1,3 @@
-Here's a README for your **php-docker-nginx-mysql-phpmyadmin** project:
-
----
-
 # php-docker-nginx-mysql-phpmyadmin
 
 A simple Docker-based development environment featuring PHP, MySQL, phpMyAdmin, and Nginx. This setup enables you to easily run a PHP web application with a MySQL database and manage the database using phpMyAdmin.
